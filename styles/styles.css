@@ -33,9 +33,9 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 aside { 
-    width: 20rem;
-    margin: 1rem;
-    padding: 1rem;
+    width: 20em;
+    margin: 1em;
+    padding: 1em;
     border: 1px solid rgb(0 0 0/0.2 ); /* 1 */
     background-color: #eee;
     color: #333;
