@@ -1,3 +1,14 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 16px;
+    font-family: Tahoma, Arial, sans-serif; 
+}
+
 nav { 
     background-color: darkblue; 
     padding: 10px; 
@@ -31,17 +42,30 @@ main img {
     border: 1px solid black; 
     padding: 2px; 
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+p { 
+    margin: 1rem;
 }
 aside { 
     width: 20em;
-    margin: 1em;
-    padding: 1em;
+    padding: 0em;
+    margin: 1.5rem;
     border: 1px solid rgb(0 0 0/0.2 ); /* 1 */
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
+aside h2 { 
+    position: absolute;
+    top: 67px;
+    left: 150px;
+
+}
 aside img { 
     width: 200px; 
     height: auto; 
@@ -51,4 +75,16 @@ footer {
      margin-top: 15px;
      border-top: 1px solid #000;
      text-align: center;
+}
+
+/* class selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+.indented {
+    padding-left: 1rem;
 }
