@@ -44,11 +44,6 @@ nav, p, section, article {
   border: 0px solid #ddd;
 }
 
-nav {
-  ul {
-    display: flex;
-  }
-}
 .socialmedia a{
   text-decoration: none;
 }
