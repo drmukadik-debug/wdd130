@@ -44,6 +44,11 @@ nav, p, section, article {
   border: 0px solid #ddd;
 }
 
+nav {
+  ul {
+    display: flex;
+  }
+}
 .socialmedia a{
   text-decoration: none;
 }
@@ -52,17 +57,17 @@ nav, p, section, article {
   position: relative;
 }
 
-.hero img {
-  background-color: var (--primary-color) ;
+.hero > img {
+  background-color: var(--primary-color) ;
   display: block;
-  width: 1200px;
+  width: 100%;
   height: auto;
 }
 
  h1 {
   position: absolute;
   top: 0px;
-  width: 1200px;
+  width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.8;
@@ -73,7 +78,7 @@ nav, p, section, article {
   .hero article {
   position: absolute;
   top: 280px;
-  left: 500px;
+  left: 450px;
   width: 700px;
   padding: 0px;
   opacity: 0.7;
