@@ -2,14 +2,12 @@
   --primary-color: #d7dadd;
   --secondary-color: #270365;
   --accent1-color: #058f3c;
-  --accent2-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
   --heading-font: 'Arial Black', sans-serif;
   --body-font: 'Tahoma', sans-serif;
 }
 
 header {
+  background-color: var(--primary-color);
   color: rgb(5, 5, 5);
   text-align: left;
 }
