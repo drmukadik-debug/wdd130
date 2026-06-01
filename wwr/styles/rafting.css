@@ -7,9 +7,39 @@
 }
 
 header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  padding: 1rem;
   background-color: var(--primary-color);
   color: rgb(5, 5, 5);
   text-align: left;
+}
+
+.logo img {
+     max-width: 150px;
+     height: auto;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #555;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
 }
 * {
   margin: 0;
@@ -17,11 +47,19 @@ header {
   box-sizing: border-box;
 }
 
+main {
+  background-color: #fff;
+}
+
 body {
   font-size: 16px;
   font-family: var(--body-font);
   background-color: #f8f9fa;
   color: #333;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 header, main, footer {
@@ -34,13 +72,13 @@ h1, h2 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
   font-size: 2rem;
+  text-align: center;
   margin-bottom: auto;
 }
 
 nav, p, section, article {
   margin: auto;
   padding: 10px;
-  background-color: white;
   border: 0px solid #ddd;
 }
 
@@ -72,11 +110,14 @@ nav, p, section, article {
 
   .hero article {
   position: absolute;
-  top: 280px;
-  left: 450px;
-  width: 700px;
-  padding: 0px;
-  opacity: 0.7;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 700px;
+  background-color: var(--accent1-color);
+  padding: 1rem;
+  color: white;
  }
  
  .hero article img {
@@ -90,4 +131,73 @@ nav, p, section, article {
   color: #333;
   font-size: 0.9rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
  }
+
+ footer p {
+  margin: 0;
+ }
+
+ .socialmedia {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .history {
+  padding: 2rem;
+  }
+  .history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .adventures {
+    padding: 2rem;
+  }
+  .adventures h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .adventure-pictures {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .adventure-pictures figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .adventure-pictures img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .adventure-pictures figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
