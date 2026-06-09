@@ -6,28 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>poll-form</title>
 </head>
+<link rel="stylesheet" href="poll-form.css">
 
 <body>
 
     <header>
         <h1>Poll-form</h1>
-        <p>Answer the questions bellow.</p>
+        <p>Welcome.</p>
     </header>
 
     <main>
-        <h2>Welcome</h2>
+        <h2>Answer the question bellow</h2>
         <form>
-            <label for="user's full name">Full name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="user's email adress">Email Address:</label>
-            <input type="email" id="useremail" name="useremail" required>
-
+            <div class="form-item column2">
+                <label for="user's full name">Full name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="user's email adress">Email Address:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+            <label for="quantity">Select Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="browser">What is your favorite internet browser</label>
+            <select name="browser" id="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="edge">Edge</option>
+                <option value="brave">Brave</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea name="feedback" id="feedback" rows="4"
+              placeholder="Stillwater Florida, Amsterdam Netherland, Timbuktu Mali"></textarea>
+            <button type="submit">Submit Poll</button>
         </form>
-        <p>This is the main section where the primary content of the page goes.</p>
+        <p></p>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
+        <p>&copy; 2026 Alain Mukadi Kabeya. All rights reserved.</p>
     </footer>
 
 </body>
