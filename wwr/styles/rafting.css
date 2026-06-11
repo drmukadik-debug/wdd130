@@ -229,6 +229,12 @@ footer p {
 }
 
 .contact-info h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.contact-info h2 {
   margin-bottom: 15px;
   font-size: 2.5rem;
   background-color: transparent;
