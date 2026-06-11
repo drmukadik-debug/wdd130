@@ -249,12 +249,11 @@ footer p {
 
 
 .contact-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1200px;
-  padding: 20px;
-  margin: 50px auto;
-  align-items: flex-start;
+  align-items: start;
+   
 }
 
 .map {
@@ -263,9 +262,8 @@ footer p {
 
 .map iframe {
   width: 100%;
-  height: 500px;
-  border: none;
-  border-radius: 8px;
+  height: 450px;
+  border: 0;
 }
 
 .contact-form {
@@ -283,13 +281,25 @@ footer p {
   flex-direction: column;
 }
 
-.form-item label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 .form-item input,
 .form-item textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.radio-group {
+  border: none;
+  padding: 0;
+}
+
+.radio-group label {
+   display: block;
+   margin-bottom: 10px;
+}
+
+.radio-group input,
+.radio-group textarea {
   padding: 10px;
   border: 1px solid #999;
   border-radius: 4px;
