@@ -17,30 +17,31 @@ header {
 }
 
 .logo img {
-     max-width: 150px;
-     height: auto;
+  max-width: 150px;
+  height: auto;
 
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 1.25rem;
-    border: 1px solid #555;
-    background-color: var(--secondary-color);
-    border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #555;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -62,13 +63,16 @@ section {
   margin-bottom: 2rem;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
   padding: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
   font-size: 2rem;
@@ -76,13 +80,16 @@ h1, h2 {
   margin-bottom: auto;
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: auto;
   padding: 10px;
   border: 0px solid #ddd;
 }
 
-.socialmedia a{
+.socialmedia a {
   text-decoration: none;
 }
 
@@ -91,14 +98,20 @@ nav, p, section, article {
 }
 
 .hero > img {
-  background-color: var(--primary-color) ;
+  background-color: var(--primary-color);
   display: block;
   width: 100%;
   height: auto;
 }
 
- h1 {
+.hero h1 {
   position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+h1 {
   top: 0px;
   width: 100%;
   padding: 16px;
@@ -106,9 +119,9 @@ nav, p, section, article {
   opacity: 0.8;
   background-color: var(--accent1-color);
   color: white;
- }
+}
 
-  .hero article {
+.hero article {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -118,14 +131,14 @@ nav, p, section, article {
   background-color: var(--accent1-color);
   padding: 1rem;
   color: white;
- }
- 
- .hero article img {
-    float: right;
-    width: 125px;
- }
+}
 
- footer {
+.hero article img {
+  float: right;
+  width: 125px;
+}
+
+footer {
   text-align: center;
   padding: 1rem;
   color: #333;
@@ -134,70 +147,200 @@ nav, p, section, article {
   display: flex;
   justify-content: space-between;
   align-items: center;
- }
+}
 
- footer p {
+footer p {
   margin: 0;
- }
+}
 
- .socialmedia {
+.socialmedia {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
- }
+}
 
- .history {
+.history {
   padding: 2rem;
-  }
-  .history h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+}
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 250px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.history-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.adventures {
+  padding: 2rem;
+}
+
+.adventures h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.adventure-pictures {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.adventure-pictures figure {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.adventure-pictures img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.adventure-pictures figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/*Contact Page Layout*/
+
+.contact-info {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #f0f0f0;
+  margin-bottom: 40px;
+}
+
+.contact-info h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  background-color: transparent;
+  color: #000;
+}
+
+.contact-info p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 50px auto;
+  align-items: flex-start;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-item input,
+.form-item textarea {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.checkbox-item {
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.employee-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.employee-gallery figure {
+  max-width: 250px;
+}
+
+.employee-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
   }
 
-  .history-content {
-    display: grid;
-    grid-template-columns: 1fr 250px 1fr;
+  .employee-gallery {
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+  }
+  .map iframe {
+    height: 300px;
   }
 
-  .history-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
   }
-
-  .adventures {
-    padding: 2rem;
-  }
-  .adventures h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .adventure-pictures {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    flex-wrap: nowrap;
-  }
-
-  .adventure-pictures figure {
-    flex: 1;
-    text-align: center;
-    margin: 0;
-  }
-
-  .adventure-pictures img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .adventure-pictures figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
+}
